@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
+  resources :students , except: [:index, :destroy]
+  resources :school_classes , except:[:index, :destroy]
+  # post '/schoolclass' => school_cla
   # The priority is based upon order of creation: first created -> highest priority.
-  # See how all your routes lay out with "rake routes".
+  # See how all your routes les out with "rake routes".
 
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
